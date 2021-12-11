@@ -28,7 +28,8 @@ allowAllFilter = filters.create(lambda _, __, ___: Config.ALLOW_ALL_PMS)
 noPmMessage = bk_noPmMessage = (
     "Hello {fname} this is an automated message\n"
     "Please wait until you get approved to direct message "
-    "And please dont spam until then "
+    "And please dont spam until then\n"
+    "But You Can Contact With Me Directly via [This Bot](https://t.me/takixbot)"
 )
 blocked_message = bk_blocked_message = "**You were automatically blocked**"
 
