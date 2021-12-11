@@ -59,22 +59,21 @@ _CATEGORY = {
 # Database
 SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
-    title="Repo",
+    title="Ownee",
     input_message_content=InputTextMessageContent("**Here's how to setup USERGE-X** "),
-    url="https://github.com/code-rgb/USERGE-X",
-    description="Setup Your Own",
-    thumb_url="https://telegra.ph/file/8fa91f9c7f6f4f6b8fa6c.jpg",
+    url="https://t.me/TakiTachiibana",
+    description="Contact Me",
+    thumb_url="https://telegra.ph/file/822f83da589a06e8d9016.jpg",
     reply_markup=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "🔥 USERGE-X Repo", url="https://github.com/code-rgb/USERGE-X"
+                    "🔥 Mirror Group", url="https://t.me/gdrive_mirrors"
                 ),
                 InlineKeyboardButton(
-                    "🚀 Deploy USERGE-X",
+                    "🚀 Channel",
                     url=(
-                        "https://heroku.com/deploy?template="
-                        "https://github.com/code-pms/MyGpack"
+                        "https://t.me/mirror_club"
                     ),
                 ),
             ]
@@ -90,7 +89,7 @@ async def _init() -> None:
 
 
 @userge.on_cmd(
-    "help", about={"header": "Guide to use USERGE commands"}, allow_channels=False
+    "help", about={"header": "Guide to use commands"}, allow_channels=False
 )
 async def helpme(message: Message) -> None:
     plugins = userge.manager.enabled_plugins
